@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { Button } from '../components'
+import Button from '../components/Button'
+import WatchCard from '../components/WatchCard'
 import { arrowRight } from '../assets/icons'
-import { statistics } from '../constants'
+import { watches, statistics } from '../constants'
 import { bigWatch1 } from '../assets/images'
 
 const Hero = () => {
@@ -30,6 +31,13 @@ const Hero = () => {
 
       <div className="flex flex-1 justify-center items-center relative max-xl:py-40 bg-primary bg-hero bg-cover bg-center xl:min-h-screen">
         <img className="object-contain relative z-10" src={heroWatchImg} alt="Watches Collection" height="600" />
+        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+          {watches.map((watch, i) => (
+            <div key={i}>
+              <WatchCard imgURL={watch} changeHeroWatchImage={watch => setHeroWatchImg(watch)} heroWatchImg={heroWatchImg} />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

@@ -2,6 +2,8 @@
 
 Welcome to the Rolex Boutique Landing Page repository! This project showcases a stunning landing page for a Rolex boutique, built using JavaScript, Tailwind CSS, and React.
 
+![Screenshot of the Project](https://github.com/sa2kasov/landing-rolex-boutique/blob/master/src/assets/images/screenshot.jpg?raw=true)
+
 ## Features
 
 - **Sleek Design**: The landing page boasts a modern and elegant design that reflects the sophistication of the Rolex brand;
